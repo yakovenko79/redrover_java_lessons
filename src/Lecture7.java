@@ -8,15 +8,13 @@ public class Lecture7 {
 
     }
     public static void main(String[] args) {
-        Point p1 = new Point();
-        p1.x = 4;
-        p1.y = 3;
+        Point daleko = new Point(4, 3);
+        System.out.println(daleko.isValid());
 
-        Point p2 = new Point();
-        p2.x = 0;
-        p2.y = 0;
+        Point blizko = new Point(0, 0);
+        System.out.println(blizko.isValid());
 
-        System.out.println(distance(p1, p2));
+        System.out.println(distance(daleko, blizko));
 
 
 
