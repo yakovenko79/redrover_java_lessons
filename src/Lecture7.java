@@ -1,4 +1,4 @@
-public class Main {
+public class Lecture7 {
 
     public static double distance(Point point1, Point point2) {
         int deltax = point2.x - point1.x;
