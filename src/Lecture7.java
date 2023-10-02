@@ -1,22 +1,17 @@
 public class Lecture7 {
-
-    public static double distance(Point point1, Point point2) {
-        int deltax = point2.x - point1.x;
-        int deltay = point2.y - point1.y;
-
-        return Math.sqrt(deltax * deltax + deltay * deltay);
-
-    }
     public static void main(String[] args) {
-        Point daleko = new Point(4, 3);
-        System.out.println(daleko.isValid());
 
-        Point blizko = new Point(0, 0);
-        System.out.println(blizko.isValid());
+        System.out.println("Max is " + Point.MAX);
+        Point p1 = new Point(250, 0);
+        System.out.println("before point 1 valid:" + p1.isValid());
 
-        System.out.println(distance(daleko, blizko));
+        Point p2 = new Point(200, 200);
+        System.out.println("before point 2 valid:" + p2.isValid());
+        Point.MAX = 300;
 
-
+        System.out.println("Max is " + Point.MAX);
+        System.out.println("after point 1 valid:" + p1.isValid());
+        System.out.println("after point 2 valid:" + p2.isValid());
 
     }
 }
